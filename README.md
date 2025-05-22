@@ -54,8 +54,8 @@ Each test scenario verifies a critical aspect of the OpenCart functionality. Bel
 ## Notes
 - **P0**: Critical priority functionalities.
 - **P1**: Important but not immediate.
-- **P2**: Optional or additional features.
-
+- **P2**: Medium priority.
+- **P3**: Low priority.
 ## Usage
 This README.md provides an overview of the test scenarios for the OpenCart. Each scenario will be tested based on its priority to ensure a smooth user experience.
 
