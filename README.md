@@ -1,18 +1,18 @@
-# OpenCart (Frontend) Test Scenarios
+# OpenCart Test Scenarios
 
 ## Project Overview
-This document outlines the test scenarios for the OpenCart frontend, ensuring key functionalities are working correctly. 
+This document outlines the test scenarios for the OpenCart , ensuring key functionalities are working correctly. 
 
 ## Project Details
-- **Project Name:** OpenCart (Frontend)
-- **Client:** [Client Name]
+- **Project Name:** OpenCart
+- **Client:** OpenCart
 - **Reference Document:** FRS
 - **Created By:** Mohai Minul Islam
 - **Creation Date:** 05/09/2025
 - **Approval Date:** 05/15/2025
 
 ## Test Scenarios
-Each test scenario verifies a critical aspect of the OpenCart frontend functionality. Below is a list of test scenarios with their respective priorities:
+Each test scenario verifies a critical aspect of the OpenCart functionality. Below is a list of test scenarios with their respective priorities:
 
 | Test Scenario ID | Description | Priority |
 |-----------------|------------|----------|
