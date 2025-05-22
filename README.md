@@ -1,7 +1,7 @@
 # OpenCart Test Scenarios
 
 ## Project Overview
-This document outlines the test scenarios for the OpenCart , ensuring key functionalities are working correctly. 
+This document outlines the test scenarios for the OpenCart , ensuring key functionalities are working correctly. Test cases of each scenario are provided on Test Documents Folder.
 
 ## Project Details
 - **Project Name:** OpenCart
@@ -57,7 +57,7 @@ Each test scenario verifies a critical aspect of the OpenCart functionality. Bel
 - **P2**: Optional or additional features.
 
 ## Usage
-This README.md provides an overview of the test scenarios for the OpenCart frontend. Each scenario will be tested based on its priority to ensure a smooth user experience.
+This README.md provides an overview of the test scenarios for the OpenCart. Each scenario will be tested based on its priority to ensure a smooth user experience.
 
 ---
 
