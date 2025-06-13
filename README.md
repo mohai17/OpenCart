@@ -61,4 +61,8 @@ This README.md provides an overview of the test scenarios for the OpenCart. Each
 
 ---
 
-Feel free to customize this file as needed! 🚀
+## Contributions
+Contributions are welcome! Feel free to submit pull requests to enhance test coverage or improve documentation.
+
+## License
+This project is licensed under [Apache License](http://www.apache.org/licenses/)
