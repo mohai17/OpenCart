@@ -1,4 +1,4 @@
-# OpenCart Test Scenarios
+# OpenCart
 
 ## Project Overview
 This document outlines the test scenarios for the OpenCart , ensuring key functionalities are working correctly. Test cases of each scenario are provided on [Test Documents](https://github.com/mohai17/OpenCart/tree/main/Test%20Documents) Folder.
