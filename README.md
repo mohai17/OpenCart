@@ -8,8 +8,8 @@ This document outlines the test scenarios for the OpenCart , ensuring key functi
 - **Client:** OpenCart
 - **Reference Document:** FRS
 - **Created By:** Mohai Minul Islam
-- **Creation Date:** 05/09/2025
-- **Approval Date:** 05/15/2025
+- **Creation Date:** 9 May 2025
+- **Approval Date:** 15 May 2025
 
 ## Test Scenarios
 Each test scenario verifies a critical aspect of the OpenCart functionality. Below is a list of test scenarios with their respective priorities:
