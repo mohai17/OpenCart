@@ -154,6 +154,26 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
 
     }
 
+    @Test(priority = 8)
+    public void TC_008_Registering_with_a_blank_first_name_field(){
+
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("");
+        registration.enterLastName("Islam");
+        registration.enterEmail("abc@gmail.com");
+        registration.enterPassword("abc123");
+        registration.clickOnSubscription();
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        boolean actual_result = registration.isFirstNameWarningDisplayed();
+
+        Assert.assertTrue(actual_result);
+
+    }
+
 
 
 
