@@ -51,27 +51,27 @@ public class Registration extends Base{
 
     }
 
-    public void enterFirstName(){
+    public void enterFirstName(String fName){
 
-        firstName.sendKeys("Maclin");
-
-    }
-
-    public void enterLastName(){
-
-        lastName.sendKeys("Islam");
+        firstName.sendKeys(fName);
 
     }
 
-    public void enterEmail(){
+    public void enterLastName(String lName){
 
-        email.sendKeys("maclin@gmail.com");
+        lastName.sendKeys(lName);
 
     }
 
-    public void enterPassword(){
+    public void enterEmail(String mail){
 
-        password.sendKeys("maclin");
+        email.sendKeys(mail);
+
+    }
+
+    public void enterPassword(String pass){
+
+        password.sendKeys(pass);
 
     }
 

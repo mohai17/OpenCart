@@ -15,10 +15,10 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
         Registration registration = new Registration(driver);
         registration.clickOnMyAccount();
         registration.clickOnRegisterLink();
-        registration.enterFirstName();
-        registration.enterLastName();
-        registration.enterEmail();
-        registration.enterPassword();
+        registration.enterFirstName("Maclin");
+        registration.enterLastName("Islam");
+        registration.enterEmail("maclin@gmail.com");
+        registration.enterPassword("maclin");
         registration.clickOnSubscription();
         registration.clickOnPrivacyPolicy();
         registration.clickOnContinueButton();
@@ -27,6 +27,26 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
         boolean actualResult = regSuccess.IsSuccessMsgDisplayed();
 
         Assert.assertTrue(actualResult);
+
+    }
+
+    @Test
+    public void TC_002_Registering_with_only_mandatory_fields(){
+
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("Jaclin");
+        registration.enterLastName("Islam");
+        registration.enterEmail("jaclin@gmail.com");
+        registration.enterPassword("jaclin");
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        RegisterSuccessPage registerSuccessPage = new RegisterSuccessPage(driver);
+        boolean actual_result = registerSuccessPage.IsSuccessMsgDisplayed();
+
+        Assert.assertTrue(actual_result);
 
     }
 
