@@ -67,9 +67,34 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
         RegisterSuccessPage registerSuccessPage = new RegisterSuccessPage(driver);
         boolean actual_result = registerSuccessPage.IsSuccessMsgDisplayed();
 
-        Assert.assertTrue(actual_result);
+        Assert.assertFalse(actual_result);
 
     }
+
+    @Test(priority = 4)
+    public void TC_004_Registering_with_numeric_values_in_first_name_field(){
+
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("Maclin2");
+        registration.enterLastName("Islam");
+        registration.enterEmail("maclin2@gmail.com");
+        registration.enterPassword("maclin2123");
+        registration.clickOnSubscription();
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        RegisterSuccessPage registerSuccessPage = new RegisterSuccessPage(driver);
+        boolean actual_result = registerSuccessPage.IsSuccessMsgDisplayed();
+
+        Assert.assertFalse(actual_result);
+
+    }
+
+
+
+
 
 
 }

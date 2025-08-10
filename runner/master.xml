@@ -5,7 +5,10 @@
             <class name="testCases.TS_001_Validate_the_working_of_registration_functionality">
                 <methods>
                     <include name="TC_001_Registering_with_all_valid_data"/>
-                    <include name=""/>
+                    <include name="TC_002_Registering_with_only_mandatory_fields"/>
+                    <include name="TC_003_Registering_with_special_characters_in_first_name_field"/>
+                    <include name="TC_004_Registering_with_numeric_values_in_first_name_field"/>
+                    <include name="TC_005_Registering_with_special_characters_in_last_name_field"/>
                 </methods>
             </class>
         </classes>
