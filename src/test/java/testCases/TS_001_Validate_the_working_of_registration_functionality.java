@@ -113,7 +113,26 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
 
     }
 
+    @Test(priority = 6)
+    public void TC_006_Registering_with_numeric_values_in_last_name_field(){
 
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("Raclin");
+        registration.enterLastName("Islam2");
+        registration.enterEmail("raclin@gmail.com");
+        registration.enterPassword("raclin123");
+        registration.clickOnSubscription();
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        RegisterSuccessPage registerSuccessPage = new RegisterSuccessPage(driver);
+        boolean actual_result = registerSuccessPage.IsSuccessMsgDisplayed();
+
+        Assert.assertFalse(actual_result);
+
+    }
 
 
 
