@@ -134,6 +134,27 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
 
     }
 
+    @Test(priority = 7)
+    public void TC_007_Registering_with_an_invalid_email_format(){
+
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("Alex");
+        registration.enterLastName("Islam");
+        registration.enterEmail("alex@gmail");
+        registration.enterPassword("alex123");
+        registration.clickOnSubscription();
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        boolean actual_result = registration.isEmailWarningDisplayed();
+
+        Assert.assertTrue(actual_result);
+
+    }
+
+
 
 
 

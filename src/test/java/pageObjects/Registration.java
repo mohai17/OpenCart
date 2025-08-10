@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Registration extends Base{
     public Registration(WebDriver driver) {
@@ -36,6 +38,8 @@ public class Registration extends Base{
 
     @FindBy(xpath = "//button[@type=\"submit\" and text()=\"Continue\"]")
     WebElement continueButton;
+
+    @FindBy(xpath = "//div[@id='error-email']") WebElement emailWarn;
 
     Actions actions = new Actions(driver);
 
@@ -92,5 +96,14 @@ public class Registration extends Base{
         actions.click(continueButton).perform();
 
     }
+
+    public boolean isEmailWarningDisplayed(){
+
+        wait.until(ExpectedConditions.visibilityOf(emailWarn));
+
+        return emailWarn.isDisplayed();
+    }
+
+
 
 }
