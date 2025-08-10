@@ -92,6 +92,27 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
 
     }
 
+    @Test(priority = 5)
+    public void TC_005_Registering_with_special_characters_in_last_name_field(){
+
+        Registration registration = new Registration(driver);
+        registration.clickOnMyAccount();
+        registration.clickOnRegisterLink();
+        registration.enterFirstName("Faclin");
+        registration.enterLastName("Islam$%@");
+        registration.enterEmail("faclin2@gmail.com");
+        registration.enterPassword("faclin123");
+        registration.clickOnSubscription();
+        registration.clickOnPrivacyPolicy();
+        registration.clickOnContinueButton();
+
+        RegisterSuccessPage registerSuccessPage = new RegisterSuccessPage(driver);
+        boolean actual_result = registerSuccessPage.IsSuccessMsgDisplayed();
+
+        Assert.assertFalse(actual_result);
+
+    }
+
 
 
 
