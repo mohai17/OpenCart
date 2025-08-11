@@ -194,7 +194,23 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
 
     }
 
+    @Test(priority = 10)
+    public void TC_010_Registering_with_a_blank_email_field(){
 
+        Registration registration = new Registration(driver);
+        boolean actual_result = registration.clickOnMyAccount()
+                .clickOnRegisterLink()
+                .enterFirstName("abcd")
+                .enterLastName("abcd")
+                .enterEmail("")
+                .enterPassword("user123")
+                .clickOnSubscription()
+                .clickOnPrivacyPolicy()
+                .clickOnContinueButton()
+                .isEmailWarningDisplayed();
+
+        Assert.assertTrue(actual_result);
+    }
 
 
 
