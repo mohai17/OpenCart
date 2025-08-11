@@ -46,57 +46,71 @@ public class Registration extends Base{
 
     Actions actions = new Actions(driver);
 
-    public void clickOnMyAccount(){
+    public Registration clickOnMyAccount(){
 
         actions.click(myAccount).perform();
 
+        return this;
+
     }
 
-    public void clickOnRegisterLink(){
+    public Registration clickOnRegisterLink(){
 
         actions.click(register).perform();
 
+        return this;
+
     }
 
-    public void enterFirstName(String fName){
+    public Registration enterFirstName(String fName){
 
         firstName.sendKeys(fName);
 
+        return this;
+
     }
 
-    public void enterLastName(String lName){
+    public Registration enterLastName(String lName){
 
         lastName.sendKeys(lName);
 
+        return this;
     }
 
-    public void enterEmail(String mail){
+    public Registration enterEmail(String mail){
 
         email.sendKeys(mail);
 
+        return this;
     }
 
-    public void enterPassword(String pass){
+    public Registration enterPassword(String pass){
 
         password.sendKeys(pass);
 
+        return this;
     }
 
-    public void clickOnSubscription(){
+    public Registration clickOnSubscription(){
 
         actions.click(subscribe).perform();
 
+        return this;
+
     }
 
-    public void clickOnPrivacyPolicy(){
+    public Registration clickOnPrivacyPolicy(){
 
         actions.click(privacyPolicy).perform();
 
+        return this;
+
     }
 
-    public void clickOnContinueButton(){
+    public Registration clickOnContinueButton(){
 
         actions.click(continueButton).perform();
+        return this;
 
     }
 
