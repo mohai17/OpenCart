@@ -212,6 +212,25 @@ public class TS_001_Validate_the_working_of_registration_functionality extends B
         Assert.assertTrue(actual_result);
     }
 
+    @Test(priority = 11)
+    public void TC_011_Register_with_a_password_of_less_than_6_digits(){
+
+        Registration registration = new Registration(driver);
+
+        boolean actual_result = registration.clickOnMyAccount()
+                .clickOnRegisterLink()
+                .enterFirstName("abcd")
+                .enterLastName("abcd")
+                .enterEmail("abcd@gmail.com")
+                .enterPassword("abc12")
+                .clickOnSubscription()
+                .clickOnPrivacyPolicy()
+                .clickOnContinueButton()
+                .isPasswordWarnDisplayed();
+
+        Assert.assertTrue(actual_result);
+
+    }
 
 
 }

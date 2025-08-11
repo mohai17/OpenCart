@@ -22,9 +22,10 @@ public class RegisterSuccessPage extends Base{
         return successMsg.isDisplayed();
     }
 
-    public void clickOnContinueButton(){
+    public RegisterSuccessPage clickOnContinueButton(){
 
         actions.click(continueButton).perform();
+        return this;
     }
 
 
